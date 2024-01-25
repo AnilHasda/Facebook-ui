@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.main{
+height:50px;
+width:100%;
+display:flex;
+justify-content:space-around;
+align-items:center;
+margin:10px 0px 5px 0px;
+}
+a{
+color:#000;
+}
+i{
+font-size:25px;
+
+}
+.main .input{
+height:35px;
+width:240px;
+padding-left:10px;
+border-radius:20px;
+outline:none;
+border:none;
+background:#f1f1f1;
+font-size:16px;
+}
+/*Recent---------*/
+.recent{
+height:40px;
+width:100%;
+padding:0px 10px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+font-weight:bold;
+margin-bottom:20px;
+}
+/*------Icon section------*/
+.icon{
+height:50px;
+width:100%;
+margin:10px 0px;
+padding:0px 15px;
+display:flex;
+justify-content:space-between;
+
+}
+.icon i{
+color:#00B2FF;
+}
+.icon div{
+height:100%;
+width:155px;
+border:1px solid #dadad9;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0px 50px 0px 10px;
+}
+a{
+color:#000;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<a href="home.html"><i class="bi bi-arrow-left"></i></a>
+<input type="text"class="input"placeholder="Search...">
+<i class="bi bi-search"></i>
+</div>
+<hr style="border:.3px solid gray;">
+<!-------Recent section------>
+<div class="recent">
+<p>Recent searches</p>
+<p style="color:#3b5998;">See all</p>
+</div>
+<!-------Recent section closed here-------->
+<p style="padding-left:10px;"><b>More to try on facebook</b></p>
+<!-------Icon section------->
+<div class="icon">
+<div style="position:relative;"><i class="bi bi-person-fill"style="padding-right:20px"></i><i class="bi bi-person-fill"style="position:absolute;left:30px;font-size:20px;"></i>Friends</div>
+<div style="padding-right:20px;"><i class="bi bi-shop-window"></i>Marketplace</div>
+</div>
+
+<div class="icon">
+<div style="position:relative;"><i class="bi bi-person-fill"style="position:absolute;left:3px;font-size:20px;"></i><i class="bi bi-person-fill"style="transform:translateY(0px);"></i><i class="bi bi-person-fill"style="position:absolute;left:20px;font-size:20px;"></i>Groups</div>
+<div><i class="bi bi-bookmark-fill"style="color:#A334FA;"></i>Saved</div>
+</div>
+</body>
+</html>

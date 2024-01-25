@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+a{
+color:black;
+}
+i{
+
+font-size:25px;
+}
+/*style of heading*/
+.heading{
+height:50px;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:0px 10px;
+align-items:center;
+margin-top:10px;
+}
+.heading h1{
+color:#3b5998;
+}
+.heading div{
+height:50px;
+width:110px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.heading div .item{
+height:45px;
+width:45px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+font-size:30px;
+font-weight:bold;
+background:#f1f1f1;
+}
+/* */
+
+/* style of heading icons */
+.icons{
+height:40px;
+width:100%;
+background:;
+margin-top:15px;
+display:flex;
+justify-content:space-around;
+align-items:center;
+margin-bottom:10px;
+}
+.icons div{
+height:40px;
+width:40px;
+display:grid;
+place-items:center;
+}
+hr{
+border:1px solid #f1f1f1;
+}
+/* style of status */
+.status{
+height:55px;
+width:100%;
+margin-top:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0px 20px;
+margin-bottom:10px;
+}
+.status div{
+height:50px;
+width:50px;
+background:;
+}
+.input{
+border:none;
+outline:none;
+height:40px;
+border-radius:1rem;
+width:190px;
+background:#f1f1f1;
+color:#000;
+font-weight:bold;
+padding-left:10px;
+}
+.profile{
+border-radius:50%;
+background:url("/storage/emulated/0/htdocs/database/upload/1691688572843.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+.profile .active{
+position:absolute;
+height:15px;
+width:15px;
+background:#3b5998;
+border-radius:50%;
+left:40px;
+top:30px;
+border:2px solid #fff;
+}
+.status .photo{
+font-weight:bold;
+text-align:center;
+}
+/*facebook story*/
+.story{
+height:180px;
+width:100%;
+margin:10px 0px;
+padding:0px 5px;
+display:grid;
+grid-template-columns:repeat(8,120px);
+overflow:hidden;
+overflow-x:scroll;
+grid-gap:5px;
+}
+.story div{
+height:100%;
+border-radius:1rem;
+border:1px solid #f1f1f1;
+}
+.story div p{
+font-size:15px;
+
+}
+.story .me{
+background:url("/storage/emulated/0/htdocs/database/upload/1691688572843.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+.story .me .addStory{
+height:45%;
+width:100%;
+position:absolute;
+top:99px;
+background:#fff;
+border-top-left-radius:0px;
+border-top-right-radius:0px;
+text-align:center;
+display:grid;
+place-items:center;
+font-weight:bold;
+font-size:18px;
+padding-top:13px;
+}
+.me .circle{
+height:30px;
+width:30px;
+background:#3b5998;
+position:absolute;
+top:85px;
+left:45px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+color:#fff;
+}
+.detail{
+height:45px;
+width:119px;
+background:linear-gradient(gray,black,black);
+position:absolute;
+top:135px;
+opacity:.4;
+left:0px;
+border-radius:1rem;
+border-top-left-radius:0px;
+border-top-right-radius:0px;
+border:none;
+}
+.number{
+position:absolute;
+height:25px;
+width:20px;
+background:#3b5998;
+left:90px;
+top:5px;
+color:#fff;
+display:grid;
+place-items:center;
+border-radius:3px;
+}
+/* style of newsFeed */
+.newsFeed{
+margin:10px 0px;
+height:auto;
+width:100%;
+overflow:hidden;
+}
+.nhead{
+height:70px;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0px 10px;
+}
+.nhead div{
+height:50px;
+width:50px;
+}
+.nhead .storyIndicator{
+height:60px;
+width:60px;
+display:grid;
+place-items:center;
+border-radius:50%;
+border:2px solid #3b5998;
+}
+.nhead .name{
+height:40px;
+width:170px;
+position:relative;
+left:-20px;
+}
+.nhead .name p{
+font-size:14px;
+}
+.newsFeed .about{
+height:auto;
+width:100%;
+padding:10px;
+}
+.newsFeed .picture{
+height:400px;
+width:100%;
+}
+.newsFeed .reaction{
+height:30px;
+width:100px;
+margin-left:10px;
+display:flex;
+align-items:center;
+}
+.newsFeed .reaction div{
+height:25px;
+width:25px;
+background:#F36B7E;
+border-radius:50%;
+border:1px solid #fff;
+display:flex;
+align-items:center;
+justify-content:center;
+padding-top:4px;
+}
+.newsFeed .reaction div i{
+font-size:14px;
+color:#fff;
+}
+.newsFeed .reaction .like{
+background:#3b5998;
+transform:translateX(4px);
+padding-top:0px;
+}
+.newsFeed .reactionIcon{
+height:40px;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:0px 10px;
+}
+.newsFeed .reactionIcon div{
+height:100%;
+width:105px;
+background:#f1f1f1;
+border-radius:1rem;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+/* fixed section style */
+.main{
+position:sticky;
+height:auto;
+width:100%;
+top:0;
+z-index:1;
+background:#fff;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<div class="heading">
+<h1>facebook</h1>
+<div><a href="search.html"><div class="item"><i class="bi bi-search"></i></div></a><a href="menu.html"><div class="item"><i class="bi bi-list"></i></div></a></div>
+</div>
+
+<!--heading icons-->
+<div class="icons">
+<div><i class="bi bi-house-door-fill"style="color:#3b5998;"></i></div>
+<a href="friends.html"><div><i class="bi bi-person"style="z-index:2;transform:translateX(-5px);"></i><i class="bi bi-person"style="position:absolute;left:110px;font-size:20px;z-index:1;"></i></div></a>
+<a href="message.html"><div><i class="bi bi-messenger"></i></div></a>
+<div><i class="bi bi-bell"></i></div>
+<div><i class="bi bi-collection-play"></i></div>
+</div>
+<hr>
+</div>
+<!--status section-->
+<div class="status">
+<a href="profile.html"><div class="profile"><div class="active"></div></div></a>
+<input type="text"class="input"placeholder="What's on your mind?">
+<div class="photo"><i class="bi bi-images"></i>Photo</div>
+</div>
+<hr style="border:3px solid #f1f1f1;">
+<!--facebook story-->
+<div class="story">
+<div class="me"><div class="addStory">Add To<p style="transform:translateY(-5px);font-size:18px;">Story</div><div class="circle"><p>+</p></div></div>
+<div style="background:url('/storage/emulated/0/Pictures/facebook/1703225976597.jpg');background-size:cover;background-position:center;position:relative;"><span class="detail"></span><p style="color:#fff;position:absolute;top:140px;left:10px;"><b>Your<br>Story</b></p></div>
+<div style="background:url('/storage/emulated/0/Pictures/facebook/1677677899332.jpg');background-size:cover;background-position:center;position:relative;"><span class="detail"></span><p style="color:#fff;position:absolute;top:140px;left:10px;"><b>Fashion<br>KTM</b></p><span class="number">3</span></div>
+<div style="background:url('/storage/emulated/0/Pictures/facebook/1680545296365.jpg');background-size:cover;background-position:center;position:relative;"><span class="detail"></span><p style="color:#fff;position:absolute;top:140px;left:10px;"><b>Positive<br>Quotes</b></p><span class="number">1</span></div>
+<div style="background:url('/storage/emulated/0/Pictures/facebook/1679050392527.jpg');background-size:cover;background-position:center;position:relative;"><span class="detail"></span><p style="color:#fff;position:absolute;top:140px;left:10px;"><b>Jokes<br>Nepal</b></p><span class="number">2</span></div>
+<div style="background:url('/storage/emulated/0/Pictures/facebook/1678420259359.jpg');background-size:cover;background-position:center;position:relative;"><span class="detail"></span><p style="color:#fff;position:absolute;top:140px;left:10px;"><b>Programming<br>Meme</b></p><span class="number">4</span></div>
+<div style="background:url('/storage/emulated/0/Pictures/facebook/1675011475251.jpg');background-size:cover;background-position:center;position:relative;"><span class="detail"></span><p style="color:#fff;position:absolute;top:140px;left:10px;"><b>Champions<br>League</b></p><span class="number">1</span></div>
+<div style="background:url('/storage/emulated/0/Pictures/facebook/1677677899332.jpg');background-size:cover;background-position:center;position:relative;"><span class="detail"></span><p style="color:#fff;position:absolute;top:140px;left:10px;"><b>Fashion<br>KTM</b></p><span class="number">3</span></div>
+
+
+</div>
+<hr style="border:3px solid #f1f1f1;">
+
+
+
+
+<!--------newsfeed sarts from here --------->
+<!--newsFeed-->
+
+
+
+
+<div class="newsFeed">
+
+<div class="nhead">
+<div class="storyIndicator"><div style="border-radius:50%;background:url('/storage/emulated/0/bootstrap/971.jpg');background-position:center;background-size:cover;"></div></div>
+<div class="name"><b>Javascript World</b><p>24m ago • <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about">Programming is my drugs and javascript is my dealer 😆🔥👑 </div>
+<div class="picture"style="background:url('/storage/emulated/0/html,css/img1.jpg');background-position:center;background-size:cover;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+
+<!-----group post ---->
+<div class="newsFeed">
+
+<div class="nhead"style="position:relative;">
+<div style="border-radius:1rem;background:url('/storage/emulated/0/Pictures/facebook/1675432713965.jpg');background-position:center;background-size:cover;"></div>
+<div class="name"><b>CR7 TILL I DIE</b><p>Ronaldista Anil • 2m ago <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="border-radius:50%;background:url('/storage/emulated/0/Pictures/facebook/1669117042980.jpg');background-position:center;background-size:cover;height:30px;width:30px;position:absolute;border:2px solid #fff;left:40px;top:30px;"></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about">Mr.Champions league🔥👑 </div>
+<div class="picture"style="background:url('/storage/emulated/0/Pictures/facebook/1675613144925.jpg');background-position:center;background-size:cover;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="newsFeed">
+
+<div class="nhead">
+<div class="storyIndicator"><div style="border-radius:50%;background:url('/storage/emulated/0/bootstrap/971.jpg');background-position:center;background-size:cover;"></div></div>
+<div class="name"><b>Javascript World</b><p>24m ago • <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about">Programming is my drugs and i am addicted to it 😆🔥👑 </div>
+<div class="picture"style="background:url('/storage/emulated/0/html,css/img1.jpg');background-position:center;background-size:cover;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+
+<!-----group post ---->
+<div class="newsFeed">
+
+<div class="nhead"style="position:relative;">
+<div style="border-radius:1rem;background:url('/storage/emulated/0/Pictures/facebook/1675432713965.jpg');background-position:center;background-size:cover;"></div>
+<div class="name"><b>CR7 TILL I DIE</b><p>Ronaldista Anil • 2m ago <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="border-radius:50%;background:url('/storage/emulated/0/Pictures/facebook/1669117042980.jpg');background-position:center;background-size:cover;height:30px;width:30px;position:absolute;border:2px solid #fff;left:40px;top:30px;"></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about">Mr.Champions league🔥👑 </div>
+<div class="picture"style="background:url('/storage/emulated/0/Pictures/facebook/1675613144925.jpg');background-position:center;background-size:cover;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+
+<!-----group post ends here ---->
+
+<div class="newsFeed">
+
+<div class="nhead">
+<div class="storyIndicator"><div style="border-radius:50%;background:url('/storage/emulated/0/Pictures/facebook/1678460501658.jpg');background-position:center;background-size:cover;"></div></div>
+<div class="name"><b>Positive Quotes</b><p>24m ago • <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about"></div>
+<div class="picture"style="background:url('/storage/emulated/0/Pictures/facebook/1681784652694.jpg');background-position:center;background-size:cover;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+
+
+<!--------newsfeed ends  here --------->
+
+
+
+
+</body>
+</html>

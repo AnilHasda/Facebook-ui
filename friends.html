@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+/* style of heading icons */
+.icons{
+height:40px;
+width:100%;
+background:;
+margin-top:30px;
+display:flex;
+justify-content:space-around;
+align-items:center;
+margin-bottom:10px;
+}
+i{
+font-size:25px;
+}
+.icons div{
+height:40px;
+width:40px;
+display:grid;
+place-items:center;
+}
+/*friend section*/
+.friend{
+height:145px;
+width:100%;
+}
+
+.friend .facebook{
+height:40px;
+width:100%;
+margin:10px 0px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0px 10px;
+}
+.friend .facebook div{
+height:100%;
+width:100px;
+display:grid;
+place-items:center;
+}
+.friend .facebook .search{
+height:40px;
+width:40px;
+border-radius:50%;
+background:#dadad9;
+display:grid;
+place-items:center;
+}
+/*--------suggestion section-------*/
+.suggestion{
+height:35px;
+width:270px;
+margin:20px 0px;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0px 10px;
+margin-top:150px;
+}
+.suggestion div{
+height:100%;
+width:120px;
+background:#f1f1f1;
+display:grid;
+place-items:center;
+border-radius:15px;
+}
+/*----------------*/
+.seeAll{
+display:flex;
+justify-content:space-between;
+margin-top:30px;
+padding:0px 10px;
+}
+/*----------Request-------------*/
+.request{
+height:110px;
+width:100%;
+margin:15px 0px;
+display:flex;
+padding:0px 10px;
+justify-content:space-between;
+}
+.request div{
+width:220px;
+}
+.request .profile{
+width:110px;
+border-radius:50%;
+border:2px solid #dadad9;
+}
+.request .detail div{
+height:65px;
+
+}
+.detail .button{
+display:flex;
+justify-content:space-between;
+}
+.detail .button div{
+height:80%;
+width:48%;
+border-radius:5px;
+display:grid;
+place-items:center;
+font-weight:bold;
+}
+.detail div .mutual{
+height:25px;
+width:80%;
+margin-top:5px;
+display:flex;
+position:relative;
+justify-content:space-between;
+padding:0px 10px 0px 0px;
+}
+.detail div .mutual div{
+height:100%;
+width:25px;
+background:green;
+border-radius:50%;
+border:2px solid #fff;
+}
+/*Import Contacts----------*/
+.import{
+height:120px;
+width:100%;
+margin:20px 0px 10px 0px;
+display:flex;
+justify-content:space-between;
+padding:0px 10px;
+
+}
+.import div{
+height:100%;
+width:210px;
+}
+.import .get{
+height:40px;
+width:120px;
+font-weight:bold;
+color:#fff;
+border-radius:5px;
+align-self:center;
+display:grid;
+place-items:center;
+background:#3b5998;
+}
+a{
+color:#000;
+}
+/*-------fixed---------*/
+.fixed{
+background:red;
+height:140px;
+width:100%;
+position:fixed;
+top:-15px;
+z-index:4;
+background:#fff;
+}
+</style>
+</head>
+<body>
+<!------nav icons----->
+<div class="fixed">
+<div class="icons">
+<a href="home.html"><div><i class="bi bi-house-door-fill"></i></div></a>
+<div><i class="bi bi-person-fill"style="z-index:2;transform:translateX(-5px);color:#3b5998;"></i><i class="bi bi-person-fill"style="position:absolute;left:110px;font-size:20px;z-index:1;color:#3b5998"></i></div>
+<a href="message.html"><div><i class="bi bi-messenger"></i></div></a>
+<div><i class="bi bi-bell"></i></div>
+<div><i class="bi bi-collection-play"></i></div>
+</div>
+<hr>
+<div class="friend">
+
+<div class="facebook"><div><h2>Friends</h2></div>
+<a href="search.html"><div class="search"><i class="bi bi-search"style="font-size:25px;"></i></div></a>
+</div>
+</div>
+</div>
+<!------fixed section closed------>
+<div class="suggestion">
+<div>Suggestions</div>
+<div>Your Friends</div>
+</div>
+
+<div class="seeAll">
+<p><b>Friend requests</b></p><p style="color:#3b5998;">See all</p>
+</div>
+</div>
+<!--------Friends section end here-------->
+<hr>
+<div class="request">
+<div class="profile"style="background:url('/storage/emulated/0/Pictures/facebook/1680021189838.jpg');background-size:cover;background-position:;"></div>
+
+<div class="detail">
+
+<div style="background:;padding-top:10px;position:relative;">
+<p style="position:absolute;left:200px;color:gray;">7w</p>
+<p>Coder John</p>
+<div class="mutual">
+<div style="z-index:2;background:url('/storage/emulated/0/chatApplication/upload/1675654152611.jpg');background-size:cover;"></div>
+<div style="background:url('/storage/emulated/0/chatApplication/upload/1675356314227.jpg');background-size:cover;position:absolute;left:20px;z-index:1;"></div>
+<p style="padding-left:0px;color:gray;">7mutual friends</p>
+</div>
+</div>
+
+<div class="button"style="background:;height:45px"><div class="confirm"style="color:#fff;background:#3b5998;">Confirm</div><div style="background:#f1f1f1;">Delete</div></div>
+</div>
+
+</div>
+
+
+<div class="request">
+<div class="profile"style="background:url('/storage/emulated/0/Pictures/facebook/1680545296365.jpg');background-size:cover;background-position:center;"></div>
+
+<div class="detail">
+
+<div style="background:;padding-top:10px;position:relative;">
+<p style="position:absolute;left:200px;color:gray;">7w</p>
+<p>Nick Fernandes</p>
+<div class="mutual">
+<div style="z-index:2;background:url('/storage/emulated/0/chatApplication/upload/1675654152611.jpg');background-size:cover;"></div>
+<div style="background:url('/storage/emulated/0/chatApplication/upload/1675356314227.jpg');background-size:cover;position:absolute;left:20px;z-index:1;"></div>
+<p style="padding-left:0px;color:gray;">7mutual friends</p>
+</div>
+</div>
+
+<div class="button"style="background:;height:45px"><div class="confirm"style="color:#fff;background:#3b5998;">Confirm</div><div style="background:#f1f1f1;">Delete</div></div>
+</div>
+</div>
+
+
+<div class="request">
+<div class="profile"style="background:url('/storage/emulated/0/Pictures/facebook/1682432207929.jpg');background-size:cover;background-position:center;"></div>
+
+<div class="detail">
+
+<div style="background:;padding-top:10px;position:relative;">
+<p style="position:absolute;left:200px;color:gray;">7w</p>
+<p>Mathew Ronald</p>
+<div class="mutual">
+<div style="z-index:2;background:url('/storage/emulated/0/chatApplication/upload/1675654152611.jpg');background-size:cover;"></div>
+<div style="background:url('/storage/emulated/0/chatApplication/upload/1675356314227.jpg');background-size:cover;position:absolute;left:20px;z-index:1;"></div>
+<p style="padding-left:0px;color:gray;">7mutual friends</p>
+</div>
+</div>
+
+<div class="button"style="background:;height:45px"><div class="confirm"style="color:#fff;background:#3b5998;">Confirm</div><div style="background:#f1f1f1;">Delete</div></div>
+</div>
+</div>
+<!-----request section closed here----->
+<hr>
+<!------- import contacts section----------->
+<div class="import">
+
+<div>
+<b><p style="padding:10px 0px;">Import contacts</p></b>
+<p>Let facebook automatically upload new and updated as you add them to your phone</p>
+
+</div>
+
+<div class="get">Get Started</div>
+
+</div>
+<hr>
+<p style="padding-top:20px;padding-left:10px;"><b>People you may know</b></p>
+<hr>
+<!------People you may know section------->
+<div class="request">
+<div class="profile"style="background:url('/storage/emulated/0/chatApplication/upload/img12.jpg');background-size:cover;background-position:;"></div>
+
+<div class="detail">
+
+<div style="background:;padding-top:10px;position:relative;">
+<p>Maguire Harry</p>
+<div class="mutual">
+<div style="z-index:2;background:url('/storage/emulated/0/chatApplication/upload/1675654152611.jpg');background-size:cover;"></div>
+<div style="background:url('/storage/emulated/0/chatApplication/upload/1675356314227.jpg');background-size:cover;position:absolute;left:20px;z-index:1;"></div>
+<p style="padding-left:0px;color:gray;">7mutual friends</p>
+</div>
+</div>
+
+<div class="button"style="background:;height:45px"><div style="color:#fff;background:#3b5998;">Add friend</div><div style="background:#f1f1f1;">Remove</div></div>
+</div>
+
+</div>
+
+
+<div class="request">
+<div class="profile"style="background:url('/storage/emulated/0/Pictures/facebook/1701576293369.jpg');background-size:cover;background-position:center;"></div>
+
+<div class="detail">
+
+<div style="background:;padding-top:10px;position:relative;">
+<p>Fernand torres</p>
+<div class="mutual">
+<div style="z-index:2;background:url('/storage/emulated/0/chatApplication/upload/1675654152611.jpg');background-size:cover;"></div>
+<div style="background:url('/storage/emulated/0/chatApplication/upload/1675356314227.jpg');background-size:cover;position:absolute;left:20px;z-index:1;"></div>
+<p style="padding-left:0px;color:gray;">7mutual friends</p>
+</div>
+</div>
+
+<div class="button"style="background:;height:45px"><div style="color:#fff;background:#3b5998;">Add friend</div><div style="background:#f1f1f1;">Remove</div></div>
+</div>
+</div>
+
+
+<div class="request">
+<div class="profile"style="background:url('/storage/emulated/0/Pictures/facebook/1702178187228.jpg');background-size:cover;background-position:center;"></div>
+
+<div class="detail">
+
+<div style="background:;padding-top:10px;position:relative;">
+<p>Johnson coeman</p>
+<div class="mutual">
+<div style="z-index:2;background:url('/storage/emulated/0/chatApplication/upload/1675654152611.jpg');background-size:cover;"></div>
+<div style="background:url('/storage/emulated/0/chatApplication/upload/1675356314227.jpg');background-size:cover;position:absolute;left:20px;z-index:1;"></div>
+</div>
+</div>
+
+<div class="button"style="background:;height:45px"><div style="color:#fff;background:#3b5998;">Add friend</div><div style="background:#f1f1f1;">Remove</div></div>
+</div>
+</div>
+</body>
+</html>

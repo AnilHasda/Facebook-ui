@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+background:linear-gradient(#f1f1f1,#dadad9);
+}
+.heading{
+height:70px;
+width:100%;
+margin:0px 0px 10px 0px;
+display:flex;
+padding:0px 10px;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+background:#f1f1f1;
+top:0;
+z-index:2;
+}
+.heading div{
+height:100%;
+width:100px;
+}
+.heading .search{
+height:45px;
+width:45px;
+border-radius:50%;
+background:#dadad9;
+display:grid;
+place-items:center;
+}
+i{
+font-size:25px;
+}
+.heading .menu{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+/* profile design */
+.profile{
+height:60px;
+width:200px;
+margin-left:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:relative;
+margin-top:70px;
+}
+.profile div{
+height:100%;
+width:150px;
+padding-top:10px;
+}
+.profile .pic{
+height:40px;
+width:40px;
+border-radius:50%;
+background:url("/storage/emulated/0/Pictures/facebook/1691688572843.jpg");
+background-size:cover;
+background-position:center;
+}
+
+/*facebook services design*/
+.service{
+height:auto;
+width:92%;
+margin:15px;
+display:flex;
+justify-content:space-between;
+}
+.service div{
+height:auto;
+width:48%;
+}
+.service .item1 div,.service .item2 div{
+height:80px;
+width:100%;
+background:#fff;
+border-radius:.5rem;
+margin-top:10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding-bottom:5px;
+justify-content:space-around;
+}
+
+/* settings style */
+.settings,.help{
+height:50px;
+width:100%;
+margin:10px 0px 0px 0px;
+padding:0px 10px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+z-index:2;
+}
+.settings .privacy,.help .support{
+height:100%;
+width:180px;
+display:flex;
+align-items:center;
+}
+.settings .privacy{
+justify-content:center;
+}
+.settings .show,.help .helpShow{
+height:15px;
+width:15px;
+border:1.5px solid black;
+border-right:0px;
+border-bottom:0px;
+transform:rotate(45deg);
+margin-right:20px;
+transition:.2s linear;
+z-index:1;
+}
+/*--------------------*/
+
+.parent{
+height:auto;
+width:100%;
+background:linear-gradient(#f1f1f1,#dadad9);
+}
+/*---------------------*/
+.mainFirst,.mainSecond{
+height:auto;
+width:100%;
+margin:0px 0px 10px 0px;
+position:absolute;
+z-index:-1;
+top:-290px;
+padding:10px 20px;
+box-sizing:border-box;
+background:#dadad9;
+}
+.mainSecond{
+position:absolute;
+top:-360px;
+z-index:-2;
+}
+.mainFirst .main1,.main2{
+height:45px;
+width:320px;
+background:#fff;
+border-radius:5px;
+margin:10px 0px;
+display:flex;
+align-items:center;
+padding-left:15px;
+}
+/*-------------logOut section---------*/
+.logOut{
+height:50px;
+width:100%;
+display:flex;
+align-items:center;
+padding-left:20px;
+position:relative;
+}
+/*-----parent1 and parent2-------*/
+.parent1,.parent2{
+height:auto;
+width:100%;
+position:relative;
+}
+.help i,.parent2 i{
+padding-right:10px;
+}
+
+
+/*live video*/
+.item2 div .liveVideo{
+height:20px;
+width:50px;
+background:#F36B7E;
+border-radius:5px;
+display:grid;
+place-items:center;
+color:#fff;
+}
+
+/* language style */
+.mainFirst .main1 .language{
+height:20px;
+width:25px;
+background:gray;
+border-radius:3px;
+margin-right:10px;
+}
+.item1 div i,.item2 i{
+color:#00B2FF;
+}
+.settings i,.help i,.parent1 i,.parent2 i,.logOut i{
+color:gray;
+}
+a{
+text-decoration:none;
+color:#000;
+}
+</style>
+</head>
+<body>
+<div class="parent">
+<div class="heading">
+<div class="menu"><a href="home.html"style="color:#000;"><i class="bi bi-arrow-left"></i></a><h2 style="padding-left:20px;"><b>Menu</b></h2></div>
+<a href="search.html"><div class="search"><i class="bi bi-search"></i></div></a>
+</div>
+
+<a href="profile.html"><div class="profile">
+<div class="pic"></div>
+<div><p style="font-size:18px;">Shiv Bhakta</p><p style="color:gray;font-size:18px;padding-top:2px;">View your profile</p></div>
+</div></a>
+
+<!----items------>
+<div class="service">
+
+
+<!---item1-------->
+<div class="item1">
+<div><i class="bi bi-messenger"style="color:#A334FA;"></i><p>Messages</p></div>
+<div><i class="bi bi-shop-window"></i>Marketplace</div>
+<div><i class="bi bi-play-btn-fill"></i>Videos</div>
+<div><i class="bi bi-bookmark-fill"style="color:#A334FA;"></i>Saved</div>
+<div><i class="bi bi-clock-history"></i>Memories</div>
+<div><i class="bi bi-controller"></i>Games</div>
+<div style="padding-left:15px;"><i class="bi bi-globe-asia-australia"></i>Climate Science Center</div>
+</div>
+
+
+<!---------item2----------->
+<div class="item2">
+<div><div class="liveVideo">LIVE</div>Live Videos</div>
+<div style="position:relative;"><i class="bi bi-person-fill"style="position:absolute;left:80px;font-size:20px;"></i><i class="bi bi-person-fill"style="transform:translateY(15px);"></i><i class="bi bi-person-fill"style="position:absolute;left:60px;font-size:20px;"></i>Groups</div>
+<div style="position:relative;"><i class="bi bi-person-fill"style="transform:translateY(15px);"></i><i class="bi bi-person-fill"style="position:absolute;left:60px;font-size:20px;"></i>Friends</div>
+<div><i class="bi bi-flag-fill"style="color:orange;"></i>Pages</div>
+<div style="padding-left:15px;"><i class="bi bi-wifi"></i>Wi-Fi & cellular performance</div>
+<div><i class="bi bi-calendar2"></i>Events</div>
+<div><i class="bi bi-award-fill"style="color:orange;"></i>Fantasy Games</div>
+<div><i class="bi bi-archive-fill"></i>Feeds</div>
+</div>
+
+</div>
+<!---service/items closed------->
+<hr>
+
+<!-------settings and privacy------>
+<div class="settings">
+<div class="privacy"><i class="bi bi-gear-fill"style="padding-right:10px;"></i>Settings & privacy</div>
+<div class="show"onclick="toggl();"></div>
+</div>
+
+</div>
+<!----parent closed here------>
+<div class="parent1">
+<div class="mainFirst">
+<div class="main1"><i class="bi bi-person-circle"style="padding-right:10px";></i>Settings</div>
+<div class="main1"><i class="bi bi-moon-fill"style="padding-right:10px";></i>Dark mode</div>
+<div class="main1"><div class="language">Aa</div>Language</div>
+<div class="main1"><i class="bi bi-reception-4"style="padding-right:10px";></i>Data saver mode</div>
+<div class="main1"style="margin-bottom:20px;"><i class="bi bi-folder-minus"style="padding-right:10px";></i>Clear space</div>
+</div>
+</div>
+<hr>
+<!-------main2-------->
+
+<div class="help">
+<div class="support"style="padding-left:10px;"><i class="bi bi-question-circle-fill"></i>Help & support</div>
+<div class="helpShow"onclick="helpToggl();"></div>
+</div>
+
+<div class="parent2">
+<div class="mainSecond">
+<div class="main2"><i class="bi bi-question-octagon-fill"></i>Help</div>
+<div class="main2"><i class="bi bi-box2-fill"></i>Support Inbox</div>
+<div class="main2"><i class="bi bi-book"></i>About</div>
+<div class="main2"><i class="bi bi-exclamation-triangle-fill"></i>Report a problem</div>
+<div class="main2"style="margin-bottom:10px;"><i class="bi bi-person-lock"></i>Safety</div>
+</div>
+
+</div>
+<hr>
+<div class="logOut"><i class="bi bi-box-arrow-left"style="padding-right:10px;"></i>Log out</div>
+<script type="text/javascript">
+let show=document.querySelector(".show");
+let mainFirst=document.querySelector(".mainFirst");
+let x=0;
+const toggl=()=>{
+if(x%2===0){
+show.style.transform="rotate(220deg)";
+mainFirst.style.position="relative";
+mainFirst.style.top="0px";
+x++;
+}
+else{
+show.style.transform="rotate(45deg)";
+mainFirst.style.position="absolute";
+mainFirst.style.top="-290px";
+x++;
+}
+}
+
+
+let helpShow=document.querySelector(".helpShow");
+let mainSecond=document.querySelector(".mainSecond");
+let y=0;
+const helpToggl=()=>{
+if(y%2===0){
+helpShow.style.transform="rotate(220deg)";
+mainSecond.style.position="relative";
+mainSecond.style.top="0px";
+y++;
+}
+else{
+helpShow.style.transform="rotate(45deg)";
+mainSecond.style.position="absolute";
+mainSecond.style.top="-360px";
+y++;
+}
+}
+</script>
+</body>
+</html>

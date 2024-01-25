@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+<style type="text/css">
+*{
+margin:0;
+padding;0;
+box-sizing:border-box;
+}
+.banner{
+height:200px;
+widtg:100%;
+background:url("/storage/emulated/0/Pictures/facebook/1703225976597.jpg");
+background-size:100%;
+background-position:center;
+}
+.banner div{
+height:40px;
+width:40px;
+border-radius:50%;
+background:#3b5998;
+position:absolute;
+border:2px solid #fff;
+left:310px;
+display:grid;
+place-items:center;
+}
+/*banner part end here----------*/
+.navigation{
+height:50px;
+width:100%;
+background:#f1f1f1;
+position:fixed;
+top:0;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:space-between;
+z-index:2;
+}
+.navigation div{
+height:100%;
+width:170px;
+display:flex;
+align-items:center;
+padding:0px 10px;
+background:#f1f1f1;
+}
+.navigation .search{
+width:60px;
+}
+/*profe part*/
+.profile{
+height:140px;
+width:140px;
+background:url("/storage/emulated/0/htdocs/database/upload/1691688572843.jpg");
+background-position:center;
+background-size:cover;
+border-radius:50%;
+position:absolute;
+top:110px;
+border:5px solid #fff;
+left:20px;
+}
+.profile .camera{
+height:40px;
+width:40px;
+background:#dadad9;
+border-radius:50%;
+position:absolute;
+left:95px;
+top:80px;
+display:grid;
+place-items:center;
+border:2px solid #fff;
+}
+/*------------------*/
+.name{
+height:50px;
+width:50%;
+position:relative;
+top:60px;
+left:30px;
+}
+/* add story design */
+.addStory{
+height:40px;
+width:100%;
+padding:0px 10px;
+position:relative;
+top:50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.addStory div{
+height:90%;
+width:140px;
+background:#dadad9;
+border-radius:5px;
+display:flex;
+justify-content:space-around;
+padding:0px 10px;
+align-items:center;
+font-weight:bold;
+}
+
+
+/*what's new section*/
+.main{
+height:165px;
+width:100%;
+background:#f1f1f1;
+margin-top:60px;
+padding-top:15px;
+}
+.main .pic{
+height:80px;
+width:100%;
+display:flex;
+padding:0px 20px 0px 10px;
+align-items:center;
+justify-content:space-between;
+line-height:25px;
+}
+.main .pic div{
+height:80px;
+width:240px;
+padding-top:5px;
+}
+.main .pic .shiv{
+width:80px;
+border-radius:50%;
+background:url("/storage/emulated/0/htdocs/database/upload/1691688572843.jpg");
+background-position:center;
+background-size:cover;
+border:1px solid gray;
+position:relative;
+}
+.main .pic .shiv div{
+position:absolute;
+height:40px;
+width:40px;
+background:#3b5998;
+border:2px solid #fff;
+border-radius:50%;
+left:35px;
+top:45px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+/* update section */
+.update{
+height:40px;
+width:100%;
+margin-top:15px;
+display:flex;
+justify-content:space-between;
+padding:0px 10px;
+}
+.update div{
+height:100%;
+width:163px;
+border:1px solid gray;
+color:gray;
+display:grid;
+place-items:center;
+}
+.update .upd{
+border:none;
+background:#3b5998;
+color:#fff;
+}
+hr{
+border:.5px solid #dadad9;
+}
+/* follower section design*/
+.follower{
+height:35px;
+width:100%;
+display:flex;
+align-items:center;
+margin:5px 0px 0px 0px;
+}
+.follower i{
+color:gray;
+}
+.follower div{
+height:20px;
+width:20px;
+background:gray;
+border-radius:50%;
+margin:0px 10px;
+display:grid;
+place-items:center;
+color:#fff;
+}
+/*--------story archieve--------*/
+.archieve{
+height:170px;
+width:100%;
+margin:20px 0px;
+display:grid;
+grid-template-columns:repeat(6,100px);
+column-gap:20px;
+overflow-x:scroll;
+padding:0px 10px;
+}
+.archieve div{
+height:auto;
+text-align:center;
+font-weight:bold;
+}
+.archieve div div{
+height:80%;
+background:#f1f1f1;
+border-radius:.5rem;
+margin-bottom:10px;
+display:grid;
+place-items:center;
+}
+/*Design of friends section*/
+.friends{
+height:350px;
+width:100%;
+margin:40px 0px 20px 0px;
+}
+.friends .seeAll{
+height:50px;
+width:100%;
+display:flex;
+justify-content:space-between;
+}
+.friends .seeAll div{
+height:100%;
+width:100px;
+display:flex;
+justify-content:center;
+flex-direction:column;
+padding-left:20px;
+}
+
+.friends .list{
+height:150px;
+width:100%;
+margin-top:5px;
+display:flex;
+justify-content:space-between;
+padding:0px 10px;
+}
+.friends .list div{
+height:130px;
+width:105px;
+font-weight:bold;
+}
+.friends .list div div{
+height:100px;
+width:100%;
+margin-bottom:10px;
+border-radius:5px;
+}
+/*Avatar design-------*/
+.avatar{
+height:60px;
+width:250px;
+margin:1m0px 0px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding-left:10px;
+}
+.avatar div{
+height:40px;
+width:110px;
+background:#dadad9;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-radius:20px;
+font-weight:bold;
+padding:0px 15px;
+}
+
+/*post section style--------*/
+.post{
+height:180px;
+width:100%;
+}
+/* style of status */
+.status{
+height:55px;
+width:100%;
+margin-top:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0px 20px 0px 50px;
+margin-bottom:10px;
+position:relative;
+
+}
+.status div{
+height:50px;
+width:50px;
+background:;
+}
+.status .input{
+border:none;
+outline:none;
+height:40px;
+border-radius:1rem;
+width:190px;
+background:#f1f1f1;
+color:#000;
+font-weight:bold;
+padding-left:10px;
+}
+.status .profile{
+border-radius:50%;
+background:url("/storage/emulated/0/portfolio/img4.jpg");
+background-size:cover;
+background-position:center;
+position:absolute;
+top:0px;
+left:15px;
+border:none;
+}
+.status .photo{
+font-weight:bold;
+text-align:center;
+}
+/*check in--------*/
+.check{
+height:30px;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0px 10px;
+}
+.check div{
+height:100%;
+width:100px;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:space-around;
+font-size:14px;
+}
+.check div i{
+font-size:16px;
+padding-left:10px;
+}
+.check div div{
+height:100%;
+width:1px;
+background:#dadad9;
+position:absolute;
+left:110px;
+top:0;
+}
+
+/* style of newsFeed */
+.newsFeed{
+margin:10px 0px;
+height:auto;
+width:100%;
+overflow:hidden;
+}
+.nhead{
+height:70px;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0px 10px;
+}
+.nhead div{
+height:50px;
+width:50px;
+}
+.nhead .storyIndicator{
+height:60px;
+width:60px;
+display:grid;
+place-items:center;
+border-radius:50%;
+border:2px solid #3b5998;
+}
+.nhead .name{
+height:40px;
+width:170px;
+position:relative;
+left:-20px;
+top:0;
+}
+.nhead .name p{
+font-size:14px;
+}
+.newsFeed .about{
+height:auto;
+width:100%;
+padding:10px;
+}
+.newsFeed .picture{
+height:400px;
+width:100%;
+}
+.newsFeed .reaction{
+height:30px;
+width:100px;
+margin-left:10px;
+display:flex;
+align-items:center;
+}
+.newsFeed .reaction div{
+height:25px;
+width:25px;
+background:#F36B7E;
+border-radius:50%;
+border:1px solid #fff;
+display:flex;
+align-items:center;
+justify-content:center;
+padding-top:4px;
+}
+.newsFeed .reaction div i{
+font-size:14px;
+color:#fff;
+}
+.newsFeed .reaction .like{
+background:#3b5998;
+transform:translateX(4px);
+padding-top:0px;
+}
+.newsFeed .reactionIcon{
+height:40px;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:0px 10px;
+}
+.newsFeed .reactionIcon div{
+height:100%;
+width:105px;
+background:#f1f1f1;
+border-radius:1rem;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+i{
+font-size:25px;
+}
+a{
+color:#000;
+}
+</style>
+</head>
+<body>
+<!---banner------>
+<div class="banner">
+<div style="top:100px;"><i class="bi bi-person-circle"style="font-size:20px;color:#fff;"></i></div>
+<div style="top:150px;background:#f1f1f1;"><i class="bi bi-camera-fill"style="font-size:20px;"></i></div>
+</div>
+
+<!----navigation part--------->
+<div class="navigation">
+<div><a href="home.html"><b><i class="bi bi-arrow-left"style="padding-right:10px;"></i></b></a>Shiv Bhakta</div>
+<div class="search"><i class="bi bi-search"></i></div>
+</div>
+
+<!------profile part design--------->
+<div class="profile"><div class="camera"><i class="bi bi-camera-fill"style="font-size:20px;"></i></div></div>
+<div class="name"><h2>Shiv Bhakta</h2></div>
+
+<!-----add story part-------->
+<div class="addStory">
+<div style="color:#fff;background:#3b5998;"><p style="font-size:30px;"><i class="bi bi-plus-lg"></i></p>Add to story</div>
+<div style="width:130px;"><i class="bi bi-pencil-fill"style="font-size:20px;"></i>Edit profile</div>
+<div style="width:60px;"><i class="bi bi-three-dots"></i></div>
+</div>
+
+
+<!------what's new section----------->
+<div class="main">
+
+<div class="pic">
+
+<div class="shiv"><div><i class="bi bi-pencil-fill"style="font-size:20px;color:#fff;"></i></div></div>
+<div><h4>What's new, Shiv?</h4>
+<p style="color:gray;font-size:18px;">Let's update some profile info that may have changed.</p>
+</div>
+
+</div>
+
+<div class="update">
+<div onclick="cancel();">Not now</div>
+<div class="upd">Update profile</div>
+</div>
+
+</div>
+<!-----main section closed------>
+<hr>
+<!----followers section--------->
+<div class="follower"><i class="bi bi-wifi"style="padding-right:20px;padding-top:10px;transform:rotate(30deg);transform-origin:bottom;"></i>Followed by<b style="padding-left:5px;">322 people</b></div>
+<div class="follower"style="display:flex;"><div>•••</div>See more about yourself</div>
+<!---------story archieve------------>
+<div class="archieve">
+<div><div><h2><i class="bi bi-plus-lg"></i></h2></div>New</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1702178187228.jpg');background-position:center;background-size:cover;"></div>collection</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1682432207929.jpg');background-position:center;background-size:cover;"></div>chill 🤟😎</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1682266540895.jpg');background-position:center;background-size:cover;"></div>Kailash❣️❣️</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1681474293763.jpg');background-position:center;background-size:cover;"></div>GOAT ❣️❣️</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1682041881218.jpg');background-position:center;background-size:cover;"></div>Memory</div>
+
+</div>
+<!-------archieve closed here------>
+
+<!---------Friends section------>
+<div class="friends">
+
+<div class="seeAll">
+<div style="width:150px;line-height:20px;"><b>Friends</b><p style="color:gray;">1,233 friends</p></div>
+<div style="color:#3b5998;">See all</div>
+</div>
+
+
+<div class="list">
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1703235954206.jpg');background-size:cover;background-position:top;"></div>Ram</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1703235969501.jpg');background-size:cover;background-position:center;"></div>John</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1703235962565.jpg');background-size:cover;background-position:center;"></div>Alex</div>
+</div>
+
+<div class="list">
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1675405126365.jpg');background-size:cover;background-position:center;"></div>Shiva Samb...</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1675405126365.jpg');background-size:cover;background-position:center;"></div>Shiva Samb...</div>
+<div><div style="background:url('/storage/emulated/0/Pictures/facebook/1675405126365.jpg');background-size:cover;background-position:center;"></div>Shiva Samb...</div>
+
+</div>
+
+</div>
+<!------friends section ends here---->
+<hr style="border:2px solid #dadad9;">
+<!------avatar--->
+<div class="avatar">
+<div><i class="bi bi-images"style="font-size:20px;"></i><p>Photos</p></div>
+<div><i class="bi bi-person-circle"style="font-size:20px;"></i>Avatars</div>
+</div>
+<!-------avatar closed here------>
+<hr style="border:2px solid #dadad9;">
+<!-----POSTS section design-------->
+<div class="post">
+<p style="padding:10px 20px;"><b>POSTS</b></p>
+<div class="status">
+<a href="profile.html"><div class="profile"></div></a>
+<input type="text"class="input"placeholder="Post a status update">
+<div class="photo"style="margin-top:29px;"><i class="bi bi-images"style="font-size:25px;"></i></div>
+</div>
+<!----Photos---check in----live event----->
+<div class="check">
+<div><i class="bi bi-images"style="padding-left:30px;color:#436e54;"></i>Photo<div></div></div>
+<div><i class="bi bi-geo-alt-fill"style="color:#F36B7E;"></i>Check In<div></div></div>
+<div><i class="bi bi-flag-fill"style="color:purple;"></i>Life Event</div>
+</div>
+
+</div>
+<!-----post section closed here------->
+<hr style="border:2px solid #dadad9;">
+<!--------newsfeed sarts from here --------->
+<!--newsFeed-->
+<div class="newsFeed">
+
+<div class="nhead">
+<div class="storyIndicator"><div style="border-radius:50%;background:url('/storage/emulated/0/htdocs/database/upload/1691688572843.jpg');background-position:center;background-size:cover;"></div></div>
+<div class="name"><b>Shiv Bhakta</b><p>24m ago • <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about">Profile change🤟🤟😎😎 </div>
+<div class="picture"style="background:url('/storage/emulated/0/htdocs/database/upload/1691688572843.jpg');background-position:;background-size:cover;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+
+<div class="newsFeed">
+
+<div class="nhead">
+<div class="storyIndicator"><div style="border-radius:50%;background:url('/storage/emulated/0/htdocs/database/upload/1691688572843.jpg');background-position:center;background-size:cover;"></div></div>
+<div class="name"><b>Shiv Bhakta</b><p>24m ago • <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about">Happiest moment of my life 😆🔥👑 </div>
+<div class="picture"style="background:url('/storage/emulated/0/Pictures/facebook/1679825193427.jpg');background-position:center;background-size:cover;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+
+<div class="newsFeed">
+
+<div class="nhead">
+<div class="storyIndicator"><div style="border-radius:50%;background:url('/storage/emulated/0/htdocs/database/upload/1691688572843.jpg');background-position:center;background-size:cover;"></div></div>
+<div class="name"><b>Shiv Bhakt</b><p>24m ago • <i class="bi bi-globe-asia-australia"style="font-size:14px;"></i></div>
+<div style="display:flex;"><i class="bi bi-three-dots"style="padding-right:5px;"></i><i class="bi bi-x"></i></div>
+</div>
+<div class="about">I promise to myself</div>
+<div class="picture"style="background:url('/storage/emulated/0/Pictures/facebook/1702890929750.jpg');background-position:;background-size:100%;background-repeat:no-repeat;"></div>
+<div class="reaction"><div class="like"><i class="bi bi-hand-thumbs-up-fill"></i></div><div><i class="bi bi-heart-fill"></i></div></div>
+
+<div class="reactionIcon">
+<div><i class="bi bi-hand-thumbs-up"style="padding-right:3px;"></i>1M</div>
+<div><i class="bi bi-chat-left"style="padding-right:10px;font-size:20px;transform:translateY(2px);"></i>777k</div>
+<div><div style="background:url('/storage/emulated/0/e-commerce website/images/share.png');height:25px;width:25px;background-size:cover;margin-right:5px;"></div>545k</div>
+</div>
+
+</div>
+<script type="text/javascript">
+let main=document.querySelector(".main");
+let addStory=document.querySelector(".addStory");
+const cancel=()=>{
+main.style.display="none";
+addStory.style.marginBottom="60px";
+}
+</script>
+</body>
+</html>
